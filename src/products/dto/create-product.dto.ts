@@ -6,7 +6,7 @@ export class CreateProductDto {
     @IsNotEmpty()
     public name: string;
     @IsNumber({maxDecimalPlaces: 4})
-    @Min(0)
+    @Min(1)
     @Type(() => Number)
     public price: number;
 }
